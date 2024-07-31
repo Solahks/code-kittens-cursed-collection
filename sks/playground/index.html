@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GJEMM10FCZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-GJEMM10FCZ");
+    </script>
+    <link href="styles/playground.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>The Playground</title>
+  </head>
+  <body>
+    <image src="images/cat1.png" id="cat"></image>
+    <h1>codekitten.org says</h1>
+    <a href="https://codekitten.org/" class="redirect">
+      <strong>420.</strong> That's an error. <br />
+      &puncsp;&puncsp;&puncsp;&puncsp; The requested URL <br />
+      &puncsp;&puncsp;&puncsp;&puncsp;&nbsp;<font style="color:red" size="6px">/Playground.org</font><br />
+      &puncsp;&puncsp;&puncsp;&puncsp; was not found.<br />
+    </a>
+    <p id="instruct">Click the link below to redirect, if refreshing the page does not resolve the issue</p>
+    <button class="troll" onclick="addTroll();">codekitten.org/playground/redirect/</button>
+    <script src="scripts/troll.js"></script>
+    <script src="scripts/cat.js"></script>
+    <script src="scripts/timing.js"></script>
+  </body>
+</html>

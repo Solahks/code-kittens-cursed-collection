@@ -1,0 +1,239 @@
+html {
+  background-size: 100vw 98vh;
+  background-position-y: 25px;
+  background-color: rgb(0, 0, 0);
+  background-image: url("../images/guitar5.jpg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  & {
+    @media (width <= 980px) {
+      background-image: url("../images/guitar1.jpg");
+      position: fixed;
+    }
+  }
+}
+
+h1 {
+  top: 15px;
+  left: 85vw;
+  position: absolute;
+  text-shadow: 4px 4px 8px black;
+  font-size: 32px;
+  font-weight: lighter;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  & {
+    @media (width <= 980px) {
+      visibility: hidden;
+      top: 1000px;
+    }
+  }
+}
+
+/*tuning Menu, options, tuning menu sign*/
+#tuningMenu {
+  margin-left: 12px;
+  margin-top: 12px;
+  padding-left: 20px;
+  height: 46px;
+  width: 350px;
+  text-align: left;
+  font-size: 26px;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  background-color: black;
+  color: white;
+  border-radius: 100px;
+  cursor: pointer;
+  & {
+    @media (width <= 980px) {
+      font-size: 6vw;
+      margin-left: 5vw;
+      margin-top: 2vw;
+      padding-left: 8vw;
+      height: auto;
+      width: 70vw;
+      text-align: left;
+      border-radius: 5vw;
+    }
+  }
+}
+
+option {
+  font-weight: lighter;
+  font-size: 2vw;
+  & {
+    @media (width <= 980px) {
+      font-weight: lighter;
+      font-size: 5vw;
+    }
+  }
+}
+
+#sign {
+  position: absolute;
+  top: 5vw;
+  left: 10vw;
+  height: 35vh;
+  visibility: hidden;
+  & {
+    @media (width <= 980px) {
+      height: 1px;
+      width: 1px;
+      top: 1000px;
+    }
+  }
+}
+
+/*visual text of the notes to match the tuning*/
+.noteLetters {
+  position: absolute;
+  margin-top: 5vw;
+  color: white;
+  text-shadow: 2px 2px 12px rgb(107, 86, 48);
+  left: 55vw;
+  font-size: 90px;
+  & {
+    @media (width <= 980px) {
+      left: 35vw;
+      font-size: 45vw;
+      top: 15vh;
+    }
+  }
+  & {
+    @media (620px <= width <= 980px) {
+      left: 40vw;
+      font-size: 30vw;
+      top: 10vh;
+    }
+  }
+  & #noteLetter6 {
+    @media (width <= 980px) {
+      position: absolute;
+    }
+  }
+  & #noteLetter5 {
+    @media (width <= 980px) {
+      position: absolute;
+    }
+  }
+  & #noteLetter4 {
+    @media (width <= 980px) {
+      position: absolute;
+    }
+  }
+  & #noteLetter3 {
+    @media (width <= 980px) {
+      position: absolute;
+    }
+  }
+  & #noteLetter2 {
+    @media (width <= 980px) {
+      position: absolute;
+    }
+  }
+}
+
+/* buttons */
+.button-wrapper {
+  position: absolute;
+  top: 28vh;
+  left: 90vw;
+  display: flex;
+  flex-direction: column;
+  & {
+    @media (width <= 980px) {
+      display: contents;
+    }
+  }
+}
+
+.button {
+  background-color: #848670;
+  margin-top: 0.7vw;
+  border-radius: 100px;
+  border-style: none;
+  color: #ece5ea;
+  cursor: pointer;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 26px;
+  padding: 8px 16px;
+  text-align: center;
+  box-shadow: 4px 2px tan;
+  & {
+    @media (width <= 980px) {
+      margin-top: 50vh;
+      margin-left: 4.75vw;
+      font-size: 6.5vw;
+      padding: 1vw 3vw;
+      box-shadow: 2px 1px tan;
+    }
+  }
+  & {
+    @media (900px <= height) {
+      margin-bottom: 0.75vw;
+    }
+  }
+  & {
+    @media (1000px <= height) {
+      margin-bottom: 1.25vw;
+    }
+  }
+  & {
+    @media (1130px <= height) {
+      margin-bottom: 1.75vw;
+    }
+  }
+  & {
+    @media (1250px <= height) {
+      margin-bottom: 2.25vw;
+    }
+  }
+  & {
+    @media (1350px <= height) {
+      margin-bottom: 3.5vw;
+    }
+  }
+  & {
+    @media (620px <= width <= 980px) {
+      margin-top: 45vh;
+    }
+  }
+}
+
+.button:hover {
+  background: #f6f9fe;
+  color: #e6d81e;
+}
+
+.button:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
+}
+
+#cat {
+  margin-top: 65vh;
+  max-height: 175px;
+  cursor: pointer;
+  & {
+    @media (width <= 980px) {
+      visibility: hidden;
+      height: 1px;
+    }
+  }
+}
+
+#pets {
+  margin-top: 45vh;
+  left: 5vw;
+  position: absolute;
+  visibility: hidden;
+  & {
+    @media (width <= 980px) {
+      visibility: hidden;
+      height: 1px;
+    }
+  }
+}
