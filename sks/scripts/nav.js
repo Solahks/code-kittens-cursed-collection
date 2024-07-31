@@ -53,3 +53,7 @@ function endCatPets() {
   }
   console.log("endpets");
 }
+
+function swing() {
+  
+}
