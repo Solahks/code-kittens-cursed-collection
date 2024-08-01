@@ -5,6 +5,14 @@ html {
   font-family: "Courier New", Courier, monospace;
 }
 
+body {
+  & {
+    @media (width <= 1170px) {
+      margin-top: 10vh;
+    }
+  }
+}
+
 /*NIGHTMODE SWITCH*/
 /* The switch - the box around the slider */
 .switch {
@@ -71,45 +79,61 @@ input:checked + .slider:before {
 
 /*heading*/
 #headingWrapper {
-  margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   width: 100vw;
+  & {
+    @media (width <= 1170px) {
+      margin-top: 5vh;
+      margin-bottom: -180px;
+    }
+  }
 }
 
 h1 {
   text-align: center;
+  font-size: 46px;
   text-shadow: 4px 4px 12px rgb(173, 91, 116);
+  & {
+    @media (width <= 1170px) {
+      font-size: 26px;
+    }
+  }
 }
 
 #cat {
+  position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
-  height: 500px;
+  height: 55vh;
   & {
-    @media (width <= 980px) {
-      height: 120px;
+    @media (width <= 1170px) {
+      height: 150px;
     }
   }
 }
 
 /*buttons, icons, links*/
-body {
-  position: absolute;
-}
-
 #bodyWrapper {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
   width: 100vw;
+  & {
+    @media (width <= 1170px) {
+      display: unset;
+    }
+  }
 }
 
 #guitar {
-  position: absolute;
-  top: 330px;
-  margin-left: 8vw;
-  height: 130px;
+  position: relative;
+  margin-top: 40px;
+  margin-left: 10px;
+  height: 250px;
+  transform: rotate(-0.1turn);
   & {
-    @media (width <= 980px) {
+    @media (width <= 1170px) {
       visibility: hidden;
       position: unset;
       height: 1px;
@@ -118,23 +142,57 @@ body {
 }
 
 #guitar:hover {
-  transform: rotate(-0.1turn);
+  transform: rotate(0.001turn);
 }
 
 #pg {
-  position: absolute;
-  top: 300px;;
-  margin-left: 72vw;
+  position: relative;
+  margin-right: 30px;
+  margin-top: 55px;
   height: 200px;
+  width: 479px;
+  background-image: url("../images/pg1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   & {
-    @media (width <= 980px) {
+    @media (width <= 1170px) {
       visibility: hidden;
       position: unset;
     }
   }
 }
 
+#pg:hover {
+  background-image: url("../images/pg2.png");
+}
+
+/*bottom of the page text/links*/
+
+#btmWrapper {
+  position: relative;
+  margin: 55px auto 0px;
+  width: 80%;
+  text-align: center;
+  font-size: 14px;
+  & {
+    /* @media (width <= 1170px) {
+      margin-top: 55vh;
+    } */
+    @media (width <= 390px) {
+      margin-top: 10px;
+    }
+  }
+}
+
+#kofiLink {
+  text-decoration: unset;
+  color: black;
+}
+
+/*mobile view buttons*/
 #guitarBtn {
+  position: absolute;
   visibility: hidden;
   background: #7c7c7c;
   border-bottom: 6px inset rgba(0, 0, 0, 0.5);
@@ -146,13 +204,13 @@ body {
   font-family: "Courier New", Courier, monospace;
 
   & {
-    @media (width <= 980px) {
+    @media (width <= 1170px) {
       visibility: visible;
+      position: relative;
       display: block;
       text-align: center;
       margin-left: auto;
       margin-right: auto;
-      margin-top: -75px;
       width: 80%;
       height: 50px;
       font-size: 20px;
@@ -162,6 +220,7 @@ body {
 }
 
 #playBtn {
+  position: absolute;
   visibility: hidden;
   background: #7c7c7c;
   border-bottom: 6px inset rgba(0, 0, 0, 0.5);
@@ -172,10 +231,11 @@ body {
   color: antiquewhite;
   font-family: "Courier New", Courier, monospace;
   & {
-    @media (width <= 980px) {
+    @media (width <= 1170px) {
       visibility: visible;
+      position: relative;
       display: block;
-      margin-top: 50px;
+      margin-top: 40px;
       margin-left: auto;
       margin-right: auto;
       width: 80%;
@@ -193,37 +253,4 @@ body {
 
 #playBtnLink {
   color: transparent;
-}
-
-/*bottom of the page text/links*/
-p {
-  margin-top: -50px;
-  font-size: 22px;
-  text-shadow: 4px 4px 8px rgb(53, 88, 75);
-  text-align: center;
-  & {
-    @media (width <= 980px) {
-      margin-top: 5vh;
-      margin: 5vh 50px;
-    }
-  }
-}
-
-#btmWrapper {
-  margin-top: 5vh;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  text-align: center;
-  font-size: 14px;
-  & {
-    @media (width <= 980px) {
-      margin-top: 12vh;
-    }
-  }
-}
-
-#kofiLink {
-  text-decoration: unset;
-  color:black;
 }
