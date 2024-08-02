@@ -81,7 +81,6 @@ input:checked + .slider:before {
 #headingWrapper {
   margin-top: 10vh;
   margin-bottom: 10vh;
-  width: 100vw;
   & {
     @media (width <= 1170px) {
       margin-top: 5vh;
@@ -93,6 +92,7 @@ input:checked + .slider:before {
 h1 {
   text-align: center;
   font-size: 46px;
+  margin:auto;
   text-shadow: 4px 4px 12px rgb(173, 91, 116);
   & {
     @media (width <= 1170px) {
@@ -104,9 +104,9 @@ h1 {
 #cat {
   position: relative;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   height: 55vh;
+  justify-content: center;
   & {
     @media (width <= 1170px) {
       height: 150px;
@@ -118,7 +118,7 @@ h1 {
 #bodyWrapper {
   display: flex;
   flex-direction: row-reverse;
-  width: 100vw;
+  align-content: space-evenly;
   & {
     @media (width <= 1170px) {
       display: unset;
@@ -128,8 +128,7 @@ h1 {
 
 #guitar {
   position: relative;
-  margin-top: 40px;
-  margin-left: 10px;
+  margin: 40px auto;
   height: 250px;
   transform: rotate(-0.1turn);
   & {
@@ -147,8 +146,7 @@ h1 {
 
 #pg {
   position: relative;
-  margin-right: 30px;
-  margin-top: 55px;
+  margin: 55px auto;
   height: 200px;
   width: 479px;
   background-image: url("../images/pg1.png");
@@ -165,6 +163,27 @@ h1 {
 
 #pg:hover {
   background-image: url("../images/pg2.png");
+}
+
+#todo {
+  position: relative;
+  margin: 5px auto;
+  height: 200px;
+  width: 150px;
+  background-image: url("../images/todo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  & {
+    @media (width <= 1170px) {
+      visibility: hidden;
+      position: unset;
+    }
+  }
+}
+
+#todo:hover {
+  background-image: url("../images/todo2.png");
 }
 
 /*bottom of the page text/links*/
@@ -253,4 +272,13 @@ h1 {
 
 #playBtnLink {
   color: transparent;
+  height: 1px;
+}
+
+a#tuneUpLink {
+  height: 0px;
+}
+
+a#playLink {
+  height: 0px;
 }
