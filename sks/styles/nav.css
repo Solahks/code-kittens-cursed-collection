@@ -1,16 +1,254 @@
 html {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   background-color: rgb(64, 139, 121);
   background-image: url("../images/code2.jpg");
   background-position: center;
   font-family: "Courier New", Courier, monospace;
 }
 
-body {
+/*HEADING*/
+#headingWrapper {
+  margin: 10vh auto;
+  width: fit-content;
+  width: fit-content;
   & {
-    @media (width <= 1170px) {
-      margin-top: 10vh;
+    @media (540px <= height) {
+      margin: 0px auto;
     }
   }
+}
+
+h1 {
+  font-size: 42px;
+  text-shadow: 4px 4px 12px rgb(173, 91, 116);
+  & {
+    @media (width <= 980px) {
+      font-size: 26px;
+    }
+  }
+}
+
+/*BODY/APP ICONS/CAT*/
+body {
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+#bodyWrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content:space-evenly;
+  width: fit-content;
+  margin: 150px auto 0px;
+  & {
+    @media (width <= 980px) {
+      display: unset;
+        }
+  }
+}
+
+#todo {
+  position: relative;
+  margin: 5px auto;
+  height: 200px;
+  width: 150px;
+  background-image: url("../images/todo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  & {
+    @media (width <= 980px) {
+      visibility: hidden;
+      position: unset;
+      height: 1px;
+    }
+  }
+}
+
+#todo:hover {
+  background-image: url("../images/todo2.png");
+}
+
+#guitar {
+  position: relative;
+  margin: 150px auto;
+  height: 250px;
+  transform: rotate(-0.1turn);
+  & {
+    @media (width <= 980px) {
+      visibility: hidden;
+      position: unset;
+      height: 1px;
+    }
+  }
+}
+
+#guitar:hover {
+  transform: rotate(0.001turn);
+}
+
+#cat {
+  position: relative;
+  display: block;
+  margin: auto;
+  height: 600px;
+  & {
+    @media (width <= 980px) {
+      height: 350px;
+      margin-left: 20vw;
+      position: unset;
+      display: unset;
+    }
+  }
+}
+
+#artGal {
+  position: relative;
+  margin: 25px auto;
+  height: 130px;
+  width: 150px;
+  justify-content: left;
+  & {
+    @media (width <= 980px) {
+      visibility: hidden;
+      position: unset;
+      height: 1px;
+    }
+  }
+}
+
+#artGal:hover {
+  transform: rotate(0.01turn);
+}
+
+#pg {
+  position: relative;
+  margin: 180px auto;
+  height: 200px;
+  width: 400px;
+  background-image: url("../images/pg1.png");
+  background-position:15%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  & {
+    @media (width <= 980px) {
+      visibility: hidden;
+      position: unset;
+      height: 1px;
+    }
+  }
+}
+
+#pg:hover {
+  background-image: url("../images/pg2.png");
+}
+
+/*BOTTOM OF THE PAGE/TEXT LINKS*/
+
+#btmWrapper {
+  position: relative;
+  margin: 100px auto;
+  justify-content: center;
+  width: fit-content;
+  text-align: center;
+  font-size: 20px;
+  & {
+    /* @media (width <= 1170px) {
+      margin-top: 55vh;
+    } */
+    @media (width <= 390px) {
+      margin-top: 10px;
+    }
+  }
+}
+
+#kofiLink {
+  text-decoration: unset;
+  color: black;
+}
+
+/*MOBILE VIEW BUTTONS*/
+#guitarBtn {
+  position: absolute;
+  visibility: hidden;
+  background: #7c7c7c;
+  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+  border-top: 6px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: antiquewhite;
+  font-family: "Courier New", Courier, monospace;
+
+  & {
+    @media (width <= 980px) {
+      visibility: visible;
+      position: relative;
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      height: 50px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+#playBtn {
+  position: absolute;
+  visibility: hidden;
+  background: #7c7c7c;
+  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+  border-top: 6px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: antiquewhite;
+  font-family: "Courier New", Courier, monospace;
+  & {
+    @media (width <= 980px) {
+      visibility: visible;
+      position: relative;
+      display: block;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      height: 50px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+#tuneBtnLink {
+  color: transparent;
+}
+
+#playBtnLink {
+  color: transparent;
+}
+
+a#todoLink {
+  height:200px;
+}
+
+a#playLink {
+  height:200px;
+}
+
+a#tuneUpLink {
+  height:300px;
+  width:400px;
 }
 
 /*NIGHTMODE SWITCH*/
@@ -75,210 +313,4 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-/*heading*/
-#headingWrapper {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  & {
-    @media (width <= 1170px) {
-      margin-top: 5vh;
-      margin-bottom: -180px;
-    }
-  }
-}
-
-h1 {
-  text-align: center;
-  font-size: 46px;
-  margin:auto;
-  text-shadow: 4px 4px 12px rgb(173, 91, 116);
-  & {
-    @media (width <= 1170px) {
-      font-size: 26px;
-    }
-  }
-}
-
-#cat {
-  position: relative;
-  display: block;
-  margin: auto;
-  height: 55vh;
-  justify-content: center;
-  & {
-    @media (width <= 1170px) {
-      height: 150px;
-    }
-  }
-}
-
-/*buttons, icons, links*/
-#bodyWrapper {
-  display: flex;
-  flex-direction: row-reverse;
-  align-content: space-evenly;
-  & {
-    @media (width <= 1170px) {
-      display: unset;
-    }
-  }
-}
-
-#guitar {
-  position: relative;
-  margin: 40px auto;
-  height: 250px;
-  transform: rotate(-0.1turn);
-  & {
-    @media (width <= 1170px) {
-      visibility: hidden;
-      position: unset;
-      height: 1px;
-    }
-  }
-}
-
-#guitar:hover {
-  transform: rotate(0.001turn);
-}
-
-#pg {
-  position: relative;
-  margin: 55px auto;
-  height: 200px;
-  width: 479px;
-  background-image: url("../images/pg1.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  & {
-    @media (width <= 1170px) {
-      visibility: hidden;
-      position: unset;
-    }
-  }
-}
-
-#pg:hover {
-  background-image: url("../images/pg2.png");
-}
-
-#todo {
-  position: relative;
-  margin: 5px auto;
-  height: 200px;
-  width: 150px;
-  background-image: url("../images/todo.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  & {
-    @media (width <= 1170px) {
-      visibility: hidden;
-      position: unset;
-    }
-  }
-}
-
-#todo:hover {
-  background-image: url("../images/todo2.png");
-}
-
-/*bottom of the page text/links*/
-
-#btmWrapper {
-  position: relative;
-  margin: 55px auto 0px;
-  width: 80%;
-  text-align: center;
-  font-size: 14px;
-  & {
-    /* @media (width <= 1170px) {
-      margin-top: 55vh;
-    } */
-    @media (width <= 390px) {
-      margin-top: 10px;
-    }
-  }
-}
-
-#kofiLink {
-  text-decoration: unset;
-  color: black;
-}
-
-/*mobile view buttons*/
-#guitarBtn {
-  position: absolute;
-  visibility: hidden;
-  background: #7c7c7c;
-  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
-  border-left: 6px inset rgba(0, 0, 0, 0.5);
-  border-right: 6px inset rgba(255, 255, 255, 0.5);
-  border-top: 6px inset rgba(255, 255, 255, 0.5);
-  box-sizing: border-box;
-  color: antiquewhite;
-  font-family: "Courier New", Courier, monospace;
-
-  & {
-    @media (width <= 1170px) {
-      visibility: visible;
-      position: relative;
-      display: block;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      width: 80%;
-      height: 50px;
-      font-size: 20px;
-      font-weight: bold;
-    }
-  }
-}
-
-#playBtn {
-  position: absolute;
-  visibility: hidden;
-  background: #7c7c7c;
-  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
-  border-left: 6px inset rgba(0, 0, 0, 0.5);
-  border-right: 6px inset rgba(255, 255, 255, 0.5);
-  border-top: 6px inset rgba(255, 255, 255, 0.5);
-  box-sizing: border-box;
-  color: antiquewhite;
-  font-family: "Courier New", Courier, monospace;
-  & {
-    @media (width <= 1170px) {
-      visibility: visible;
-      position: relative;
-      display: block;
-      margin-top: 40px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 80%;
-      height: 50px;
-      text-align: center;
-      font-size: 20px;
-      font-weight: bold;
-    }
-  }
-}
-
-#tuneBtnLink {
-  color: transparent;
-}
-
-#playBtnLink {
-  color: transparent;
-  height: 1px;
-}
-
-a#tuneUpLink {
-  height: 0px;
-}
-
-a#playLink {
-  height: 0px;
 }
