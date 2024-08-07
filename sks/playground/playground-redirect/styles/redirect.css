@@ -1,0 +1,13 @@
+html {
+    background-color: black;
+    font-family: "Courier New", Courier, monospace;
+
+}
+
+#secret {
+    color:white;
+    font-size: 46px;
+    width:fit-content;
+    margin:200px auto;
+}
+

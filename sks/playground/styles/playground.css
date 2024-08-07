@@ -18,6 +18,7 @@ a.redirect {
   margin-left: 50px;
   display: block;
   margin-top: 150px;
+  width:30%;
   color: #000000;
   text-decoration-line: none;
   & {
@@ -72,4 +73,15 @@ button.troll:hover {
       top:3%;
     }
   }
+}
+
+#tayCatWrapper {
+  width:fit-content;
+  margin-left:90vw;
+}
+
+#tayCat {
+  color: transparent;
+  background-color:transparent;
+  border: none;
 }

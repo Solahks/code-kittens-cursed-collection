@@ -251,6 +251,9 @@ a#tuneUpLink {
   width:400px;
 }
 
+a#artLink {
+  height: 200px;
+}
 /*NIGHTMODE SWITCH*/
 /* The switch - the box around the slider */
 .switch {
