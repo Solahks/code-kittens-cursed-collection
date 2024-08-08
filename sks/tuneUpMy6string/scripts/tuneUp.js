@@ -512,3 +512,15 @@ for (let i = 0; i < myButtons.length; i++) {
     }, 1000);
   });
 }
+
+if ((menu.value = "select")) {
+  myButtons.removeEventListener("click",);
+  myButtons.addEventListener("mouseover", petSign);
+  function petSign() {
+    document.getElementById("pets").style.visibility = "visible";
+    setTimeout(rehidePetSign, 1000);
+  }
+  function rehidePetSign() {
+    document.getElementById("pets").style.visibility = "hidden";
+  }
+}
