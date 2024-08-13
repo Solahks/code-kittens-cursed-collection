@@ -1,18 +1,44 @@
 html {
-  background-size: 100vw 98vh;
-  background-position-y: 25px;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
+  width: fit-content;
+  height: fit-content;
+  position:relative;
+  z-index: -1;
   background-image: url("../images/guitar5.jpg");
+  background-size:contain;
   background-repeat: no-repeat;
-  overflow: hidden;
-  font-family: "Google Sans", Roboto, Arial, sans-serif;
+}
+html::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: url(../images/guitar5.jpg) 0 0 repeat;
+  transform: rotate(180deg);
+}
+
+body {
+  width: fit-content;
+  height: fit-content;
+}
+
+/* #guitar {
+  position:relative;
+  z-index: -1;
+  background-image: url("../images/guitar5.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width:3000px;
+  height:4000px;
   & {
     @media (width <= 980px) {
-      background-image: url("../images/guitar1.jpg");
-      position: fixed;
+      transform: rotate(-90deg);
     }
   }
-}
+} */
+
 
 h1 {
   top: 15px;

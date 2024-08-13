@@ -16,14 +16,3 @@ function petSign() {
 function rehidePetSign() {
   document.getElementById("pets").style.visibility = "hidden";
 }
-
-mysixString = getElementById("audio-button6");
-mysixString.addEventListener("mouseover", petSign);
-function sixString() {
-  document.getElementById("pets").style.visibility = "visible";
-  setTimeout(rehidePetSign, 1000);
-  console.log("6string");
-}
-function rehidePetSign() {
-  document.getElementById("pets").style.visibility = "hidden";
-}

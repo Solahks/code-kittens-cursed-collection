@@ -21,53 +21,48 @@
     <title>tuneUpMy6string</title>
   </head>
   <body>
-    <div id="background"></div>
+    <div id="guitar"></div>
     <div id="headingWrapper">
-      <h1>
-        tuneUpMy<br />
-        &puncsp;&puncsp;&puncsp;&puncsp; 6string
-      </h1>
+      <select id="tuningMenu">
+        <option value="select" id="select">--Select Tuning--</option>
+        <optgroup label="Standard Tuning" class="tuningCategories">
+          <option value="e-std">E Standard Tuning</option>
+        </optgroup>
+
+        <optgroup label="Drop Tunings">
+          <option value="drop-d">Drop D</option>
+          <option value="drop-c#">Drop C#</option>
+          <option value="drop-c">Drop C</option>
+          <option value="drop-b">Drop B</option>
+          <option value="drop-a#">Drop A#</option>
+          <option value="drop-a">Drop A</option>
+          <option value="drop-g#">Drop G#</option>
+          <option value="drop-g">Drop G</option>
+          <option value="drop-f#">Drop F#</option>
+          <option value="drop-f">Drop F</option>
+          <option value="drop-e">Drop E</option>
+          <option value="drop-d#">Drop D#</option>
+        </optgroup>
+
+        <optgroup label="Open Tunings">
+          <option value="open-a">Major Open A</option>
+          <option value="open-b">Major Open B</option>
+          <option value="open-c">Major Open C</option>
+          <option value="open-d">Major Open D</option>
+          <option value="open-e">Major Open E</option>
+          <option value="open-f">Major Open F</option>
+          <option value="open-g">Major Open G</option>
+        </optgroup>
+
+        <optgroup label="Regular Tunings">
+          <option value="major-seconds">Major Seconds</option>
+          <option value="minor-thirds">Minor Thirds</option>
+          <option value="major-thirds">Major Thirds</option>
+          <option value="all-fourths">All fourths</option>
+          <option value="augmented-fourths">Augmented fourths</option>
+        </optgroup>
+      </select>
     </div>
-    <select id="tuningMenu">
-      <option value="select" id="select">--Select Tuning--</option>
-      <optgroup label="Standard Tuning" class="tuningCategories">
-        <option value="e-std">E Standard Tuning</option>
-      </optgroup>
-
-      <optgroup label="Drop Tunings">
-        <option value="drop-d">Drop D</option>
-        <option value="drop-c#">Drop C#</option>
-        <option value="drop-c">Drop C</option>
-        <option value="drop-b">Drop B</option>
-        <option value="drop-a#">Drop A#</option>
-        <option value="drop-a">Drop A</option>
-        <option value="drop-g#">Drop G#</option>
-        <option value="drop-g">Drop G</option>
-        <option value="drop-f#">Drop F#</option>
-        <option value="drop-f">Drop F</option>
-        <option value="drop-e">Drop E</option>
-        <option value="drop-d#">Drop D#</option>
-      </optgroup>
-
-      <optgroup label="Open Tunings">
-        <option value="open-a">Major Open A</option>
-        <option value="open-b">Major Open B</option>
-        <option value="open-c">Major Open C</option>
-        <option value="open-d">Major Open D</option>
-        <option value="open-e">Major Open E</option>
-        <option value="open-f">Major Open F</option>
-        <option value="open-g">Major Open G</option>
-      </optgroup>
-
-      <optgroup label="Regular Tunings">
-        <option value="major-seconds">Major Seconds</option>
-        <option value="minor-thirds">Minor Thirds</option>
-        <option value="major-thirds">Major Thirds</option>
-        <option value="all-fourths">All fourths</option>
-        <option value="augmented-fourths">Augmented fourths</option>
-      </optgroup>
-    </select>
-
     <image src="images/pets.png" id="pets"></image>
     <image src="images/sign.png" id="sign"></image>
 
