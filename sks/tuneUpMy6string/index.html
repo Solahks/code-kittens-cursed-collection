@@ -21,9 +21,8 @@
     <title>tuneUpMy6string</title>
   </head>
   <body>
-    <div id="guitar"></div>
-    <div id="headingWrapper">
-      <select id="tuningMenu">
+    <div class="headingWrapper">
+      <select class="tuningMenu">
         <option value="select" id="select">--Select Tuning--</option>
         <optgroup label="Standard Tuning" class="tuningCategories">
           <option value="e-std">E Standard Tuning</option>
@@ -63,33 +62,34 @@
         </optgroup>
       </select>
     </div>
-    <image src="images/pets.png" id="pets"></image>
-    <image src="images/sign.png" id="sign"></image>
-
-    <!-- Letters to match notes for each tuning -->
-    <div id="bodyWrapper">
-      <div class="noteLetters">
-        <div id="noteLetter6"></div>
-        <div id="noteLetter5"></div>
-        <div id="noteLetter4"></div>
-        <div id="noteLetter3"></div>
-        <div id="noteLetter2"></div>
-        <div id="noteLetter1"></div>
-      </div>
-      <!-- buttons on strings -->
-      <div class="button-wrapper">
-        <button id="audio-button6" class="button">6</button>
-        <button id="audio-button5" class="button">5</button>
-        <button id="audio-button4" class="button">4</button>
-        <button id="audio-button3" class="button">3</button>
-        <button id="audio-button2" class="button">2</button>
-        <button id="audio-button1" class="button">1</button>
+    <div class="bodyWrapper">
+      <div class="guitar"></div>
+      <a href="https://codekitten.org/">
+        <image onclick="catPet()" src="images/cat1.png" class="cat"></image>
+      </a>
+      <!-- <image src="images/pets.png" id="pets"></image>
+    <image src="images/sign.png" id="sign"></image> -->
+      <!-- Letters to match notes for each tuning -->
+      <div class="noteWrapper">
+        <div class="noteLetters">
+          <div id="noteLetter6"></div>
+          <div id="noteLetter5"></div>
+          <div id="noteLetter4"></div>
+          <div id="noteLetter3"></div>
+          <div id="noteLetter2"></div>
+          <div id="noteLetter1"></div>
+        </div>
+        <!-- buttons on strings -->
+        <div class="button-wrapper">
+          <button id="audio-button6" class="button">6</button>
+          <button id="audio-button5" class="button">5</button>
+          <button id="audio-button4" class="button">4</button>
+          <button id="audio-button3" class="button">3</button>
+          <button id="audio-button2" class="button">2</button>
+          <button id="audio-button1" class="button">1</button>
+        </div>
       </div>
     </div>
-
-    <a href="https://codekitten.org/">
-      <image onclick="catPet()" src="images/cat1.png" id="cat"></image>
-    </a>
     <script src="Scripts/tuneUp.js"></script>
     <script src="Scripts/cat.js"></script>
     <script src="Scripts/signHover.js"></script>
