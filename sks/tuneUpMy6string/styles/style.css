@@ -1,9 +1,13 @@
 html {
-  background-color: black;
+  background-image: url("../images/background6.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  font-family: sans-serif;
 }
 
 /*HEADING-TUNING MENU AND TUNE UP LOGO*/
-.tuningMenu {
+#tuningMenu {
+  position: relative;
   margin-top: 20px;
   padding-left: 20px;
   height: 50px;
@@ -14,6 +18,7 @@ html {
   background-color: black;
   color: white;
   border-radius: 100px;
+  filter: drop-shadow(10px 10px 10px black);
   cursor: pointer;
   & {
     @media (width <= 980px) {
@@ -31,7 +36,7 @@ html {
 
 option {
   font-weight: lighter;
-  font-size: 2vw;
+  font-size: 26px;
   & {
     @media (width <= 980px) {
       font-weight: lighter;
@@ -42,20 +47,21 @@ option {
 
 /*BODY- BCK IMG, BUTTONS, LETTERS, LOGO*/
 .bodyWrapper {
-width:fit-content;
-justify-content: center;
+  margin-top: 10px;
+  width: fit-content;
+  justify-content: center;
 }
 
-
 .guitar {
-  position:absolute;
+  position: absolute;
   z-index: 1;
   width: 1600px;
   height: 1000px;
   background-image: url("../images/guitar5.jpg");
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
- 
+  filter: drop-shadow(10px 10px 10px black);
+
   & {
     @media (width <= 980px) {
       transform: rotate(-90deg);
@@ -64,13 +70,18 @@ justify-content: center;
 }
 
 /*NOTE CHARACTERS THAT APPEAR WHEN BUTTONS ARE PRESSED*/
-.noteLetters {
+.noteWrapper {
   position: absolute;
-  margin-top: 5vw;
+  z-index: 2;
+}
+
+.noteLetters {
+  margin-top: 80px;
+  margin-left: 850px;
   color: white;
+  position: absolute;
   text-shadow: 2px 2px 12px rgb(107, 86, 48);
-  left: 55vw;
-  font-size: 90px;
+  font-size: 100px;
   & {
     @media (width <= 980px) {
       left: 35vw;
@@ -111,12 +122,31 @@ justify-content: center;
     }
   }
 }
+#noteLetter5 {
+  margin-top: 20px;
+}
+#noteLetter4 {
+  margin-top: 30px;
+}
+#noteLetter3 {
+  margin-top: 20px;
+}
+
+#noteLetter2 {
+  margin-top: 20px;
+}
+#noteLetter1 {
+  margin-top: 10px;
+}
+
 
 /* AUDIO BUTTONS */
 .button-wrapper {
   position: absolute;
   display: flex;
   flex-direction: column;
+  margin-top: 230px;
+  margin-left: 1450px;
   & {
     @media (width <= 980px) {
       display: contents;
@@ -126,7 +156,7 @@ justify-content: center;
 
 .button {
   z-index: 2;
-  margin-top: 40px;
+  margin-top: 25px;
   background-color: #848670;
   border-radius: 100px;
   border-style: none;
@@ -145,7 +175,8 @@ justify-content: center;
       padding: 1vw 3vw;
       box-shadow: 2px 1px tan;
     }
-  }}
+  }
+}
 
 .button:hover {
   background: #f6f9fe;
@@ -163,8 +194,10 @@ justify-content: center;
 /*CODE KITTEN ICON*/
 .cat {
   max-height: 175px;
-  position:absolute;
+  position: absolute;
+  margin-top: 900px;
   z-index: 3;
+  filter: drop-shadow(10px 5px 5px black);
   cursor: pointer;
   & {
     @media (width <= 980px) {
@@ -173,7 +206,6 @@ justify-content: center;
     }
   }
 }
-
 
 /*ON HOVER SIGNS*/
 /* #pets {
