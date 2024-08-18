@@ -495,12 +495,12 @@ function updateMenu() {
 }
 
 // hide the visual note elements
-const noteArr = [];
-for (let i = 0; i < myButtons.length; i++) {
-  const el = document.getElementById(`noteLetter${i + 1}`);
-  el.style.visibility = "hidden";
-  noteArr.unshift(el);
-}
+// const noteArr = [];
+// for (let i = 0; i < myButtons.length; i++) {
+//   const el = document.getElementById(`noteLetter${i + 1}`);
+//   el.style.visibility = "hidden";
+//   noteArr.unshift(el);
+// }
 
 //looping audio and visual arrays to buttons- set visibility timer
 for (let i = 0; i < myButtons.length; i++) {

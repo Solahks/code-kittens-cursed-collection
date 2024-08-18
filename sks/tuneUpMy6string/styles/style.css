@@ -3,11 +3,19 @@ html {
   background-size: cover;
   background-repeat: repeat;
   font-family: sans-serif;
+  height:fit-content;
+  width:fit-content;
+  & {
+    @media (width <= 980px) {
+      background-size: unset;
+    }
+  }
 }
 
 /*HEADING-TUNING MENU AND TUNE UP LOGO*/
 #tuningMenu {
   position: relative;
+  z-index: 3;
   margin-top: 20px;
   padding-left: 20px;
   height: 50px;
@@ -18,18 +26,16 @@ html {
   background-color: black;
   color: white;
   border-radius: 100px;
-  filter: drop-shadow(10px 10px 10px black);
+  filter: drop-shadow(20px 20px 20px black);
   cursor: pointer;
   & {
     @media (width <= 980px) {
-      font-size: 6vw;
-      margin-left: 5vw;
-      margin-top: 2vw;
-      padding-left: 8vw;
-      height: auto;
-      width: 70vw;
-      text-align: left;
-      border-radius: 5vw;
+      font-size: 25px;
+      width: 800px;
+      height: 130px;
+      font-size: 72px;
+      margin-left: 100px;
+      margin-top: 100px;
     }
   }
 }
@@ -46,10 +52,23 @@ option {
 }
 
 /*BODY- BCK IMG, BUTTONS, LETTERS, LOGO*/
+
+body {
+  & {
+    @media (width <= 980px) {
+
+    }
+  }
+}
+
 .bodyWrapper {
   margin-top: 10px;
   width: fit-content;
-  justify-content: center;
+  height:fit-content;
+  & {
+    @media (width <= 980px) {
+    }
+  }
 }
 
 .guitar {
@@ -57,14 +76,17 @@ option {
   z-index: 1;
   width: 1600px;
   height: 1000px;
+  align-content:center;
   background-image: url("../images/guitar5.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   filter: drop-shadow(10px 10px 10px black);
-
   & {
     @media (width <= 980px) {
+      margin-top: 750px;
       transform: rotate(-90deg);
+      width: 2200px;
+      height: 2000px;
     }
   }
 }
@@ -73,6 +95,10 @@ option {
 .noteWrapper {
   position: absolute;
   z-index: 2;
+  & {
+    @media (width <= 980px) {
+    }
+  }
 }
 
 .noteLetters {
@@ -84,47 +110,41 @@ option {
   font-size: 100px;
   & {
     @media (width <= 980px) {
-      left: 35vw;
-      font-size: 45vw;
-      top: 15vh;
-    }
-  }
-  & {
-    @media (620px <= width <= 980px) {
-      left: 40vw;
-      font-size: 30vw;
-      top: 10vh;
+      font-size: 172px;
     }
   }
   & #noteLetter6 {
     @media (width <= 980px) {
       position: absolute;
+      margin-top: unset;
     }
   }
   & #noteLetter5 {
     @media (width <= 980px) {
       position: absolute;
+      margin-top: unset;
     }
   }
   & #noteLetter4 {
     @media (width <= 980px) {
       position: absolute;
+      margin-top: unset;
     }
   }
   & #noteLetter3 {
     @media (width <= 980px) {
       position: absolute;
+      margin-top: unset;
     }
   }
   & #noteLetter2 {
     @media (width <= 980px) {
       position: absolute;
+      margin-top: unset;
     }
   }
 }
-#noteLetter5 {
-  margin-top: 20px;
-}
+
 #noteLetter4 {
   margin-top: 30px;
 }
@@ -139,41 +159,45 @@ option {
   margin-top: 10px;
 }
 
-
 /* AUDIO BUTTONS */
 .button-wrapper {
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin-top: 230px;
+  margin-top: 525px;
   margin-left: 1450px;
+  width: fit-content;
   & {
     @media (width <= 980px) {
-      display: contents;
+      display: flex;
+      flex-direction: row;
+      margin-left: 80px;
     }
   }
 }
 
 .button {
   z-index: 2;
-  margin-top: 25px;
+  margin-top: 16px;
   background-color: #848670;
   border-radius: 100px;
   border-style: none;
   color: #ece5ea;
   cursor: pointer;
-  font-family: "Google Sans", Roboto, Arial, sans-serif;
-  font-size: 26px;
-  padding: 8px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  padding: 12px 20px;
   text-align: center;
   box-shadow: 4px 2px tan;
+  display: fixed;
   & {
     @media (width <= 980px) {
-      margin-top: 50vh;
-      margin-left: 4.75vw;
-      font-size: 6.5vw;
-      padding: 1vw 3vw;
-      box-shadow: 2px 1px tan;
+      margin-top: 1225px;
+      margin-left: 38px;
+      padding: 50px 70px;
+      font-weight: bold;
+      font-size: 65px;
+      box-shadow: 20px 20px 40px rgb(0, 0, 0);
     }
   }
 }
