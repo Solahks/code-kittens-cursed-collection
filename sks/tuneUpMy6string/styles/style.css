@@ -76,7 +76,6 @@ body {
   z-index: 1;
   width: 1600px;
   height: 1000px;
-  align-content:center;
   background-image: url("../images/guitar5.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -164,12 +163,13 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin-top: 525px;
+  margin-top: 220px;
   margin-left: 1450px;
   width: fit-content;
   & {
     @media (width <= 980px) {
       display: flex;
+      margin-top: 525px;
       flex-direction: row;
       margin-left: 80px;
     }
