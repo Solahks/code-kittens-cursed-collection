@@ -1,4 +1,4 @@
-//Estandard Audio Files
+//E-STANDARD AUDIO FILES
 const audioFilesStan = [
   new Audio("audio/String6/String6LE.mp3"),
   new Audio("audio/String5/String5A.mp3"),
@@ -7,8 +7,7 @@ const audioFilesStan = [
   new Audio("audio/String2/String2B.mp3"),
   new Audio("audio/String1/String1HE.mp3"),
 ];
-
-//Drop Tuning Audio Files
+//DROP TUNING AUDIO FILES
 const audioFilesDropD = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -17,7 +16,6 @@ const audioFilesDropD = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesDropCSharp = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -26,7 +24,6 @@ const audioFilesDropCSharp = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesDropC = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -35,7 +32,6 @@ const audioFilesDropC = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesDropB = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -44,7 +40,6 @@ const audioFilesDropB = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesDropASharp = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -53,7 +48,6 @@ const audioFilesDropASharp = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesDropA = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -62,7 +56,6 @@ const audioFilesDropA = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesDropGSharp = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -71,7 +64,6 @@ const audioFilesDropGSharp = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesDropG = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -80,7 +72,6 @@ const audioFilesDropG = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesDropFSharp = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -89,7 +80,6 @@ const audioFilesDropFSharp = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesDropF = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -98,7 +88,6 @@ const audioFilesDropF = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesDropE = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -107,7 +96,6 @@ const audioFilesDropE = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesDropDSharp = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -117,7 +105,7 @@ const audioFilesDropDSharp = [
   new Audio("audioOpenA/String1HE.mp3"),
 ];
 
-//Open Tuning Audio Files
+//OPEN TUNING AUDIO FILES
 const audioFilesOpenA = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -126,7 +114,6 @@ const audioFilesOpenA = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesOpenB = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -135,7 +122,6 @@ const audioFilesOpenB = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesOpenC = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -144,7 +130,6 @@ const audioFilesOpenC = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesOpenD = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -153,7 +138,6 @@ const audioFilesOpenD = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesOpenE = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -162,7 +146,6 @@ const audioFilesOpenE = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesOpenF = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -171,7 +154,6 @@ const audioFilesOpenF = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesOpenG = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -181,7 +163,7 @@ const audioFilesOpenG = [
   new Audio("audioOpenA/String1HE.mp3"),
 ];
 
-//regular tuning audio files
+//REGULAR TUNING AUDIO FILES
 const audioFilesMajorSeconds = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -190,7 +172,6 @@ const audioFilesMajorSeconds = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesMinorThirds = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -199,7 +180,6 @@ const audioFilesMinorThirds = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesMajorThirds = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -208,7 +188,6 @@ const audioFilesMajorThirds = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesAllFourths = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -217,7 +196,6 @@ const audioFilesAllFourths = [
   new Audio("audioOpenA/String2A.mp3"),
   new Audio("audioOpenA/String1HE.mp3"),
 ];
-
 const audioFilesAugmentedFourths = [
   new Audio("audioOpenA/String6LE.mp3"),
   new Audio("audioOpenA/String5A.mp3"),
@@ -227,7 +205,7 @@ const audioFilesAugmentedFourths = [
   new Audio("audioOpenA/String1HE.mp3"),
 ];
 
-//Audio Key Value Pairs used in => updateMenu
+//AUDIO KEY VALUE PAIRS USED IN => UPDATEMENU
 const dropTuningAudioFiles = {
   "drop-d": audioFilesDropD,
   "drop-c#": audioFilesDropA,
@@ -242,7 +220,6 @@ const dropTuningAudioFiles = {
   "drop-e": audioFilesDropE,
   "drop-d#": audioFilesDropDSharp,
 };
-
 const openTuningAudioFiles = {
   "open-a": audioFilesDropD,
   "open-b": audioFilesDropA,
@@ -252,7 +229,6 @@ const openTuningAudioFiles = {
   "open-f": audioFilesDropC,
   "open-g": audioFilesDropC,
 };
-
 const regularTuningAudioFiles = {
   "major-seconds": audioFilesDropD,
   "minor-thirds": audioFilesDropA,
@@ -262,13 +238,13 @@ const regularTuningAudioFiles = {
 };
 
 let menu = document.getElementById("tuningMenu");
-//audio buttons
+//AUDIO BUTTONS
 const myButtons = document.querySelectorAll(".button");
 
 menu.onchange = updateMenu;
 
-//identify what option of the menu is selected
-//set state to corresponding audio files and innertext
+//IDENTIFY MENU OPTION SELECTED
+//SET STATE TO CORRESPONDING AUDIO FILES AND INNER TEXT
 function updateMenu() {
   switch (menu.value) {
     case "e-std":
@@ -388,7 +364,6 @@ function updateMenu() {
       noteLetter2.innerText = "C";
       noteLetter1.innerText = "F";
       break;
-    //open tuning
     case "open-a":
       audios = openTuningAudioFiles[menu.value];
       noteLetter6.innerText = "E";
@@ -494,15 +469,15 @@ function updateMenu() {
   }
 }
 
-// hide the visual note elements
-// const noteArr = [];
-// for (let i = 0; i < myButtons.length; i++) {
-//   const el = document.getElementById(`noteLetter${i + 1}`);
-//   el.style.visibility = "hidden";
-//   noteArr.unshift(el);
-// }
+// HIDE THE VISUAL NOTE ELEMENTS
+const noteArr = [];
+for (let i = 0; i < myButtons.length; i++) {
+  const el = document.getElementById(`noteLetter${i + 1}`);
+  el.style.visibility = "hidden";
+  noteArr.unshift(el);
+}
 
-//looping audio and visual arrays to buttons- set visibility timer
+//LOOPING AUD/VIS ARRAYS TO BUTTONS- SET VISIBILITY TIMER
 for (let i = 0; i < myButtons.length; i++) {
   myButtons[i].addEventListener("click", () => {
     audios[i].play();
@@ -511,16 +486,4 @@ for (let i = 0; i < myButtons.length; i++) {
       noteArr[i].style.visibility = "hidden";
     }, 1000);
   });
-}
-
-if ((menu.value = "select")) {
-  myButtons.removeEventListener("click",);
-  myButtons.addEventListener("mouseover", petSign);
-  function petSign() {
-    document.getElementById("pets").style.visibility = "visible";
-    setTimeout(rehidePetSign, 1000);
-  }
-  function rehidePetSign() {
-    document.getElementById("pets").style.visibility = "hidden";
-  }
 }

@@ -1,13 +1,13 @@
 html {
   background-image: url("../images/background6.jpg");
-  background-size:cover;
-  background-repeat:repeat;
+  background-size: cover;
+  background-repeat: repeat;
   font-family: sans-serif;
   & {
     @media (width <= 980px) {
       background-size: unset;
-      height:fit-content;
-      width:fit-content;
+      height: fit-content;
+      width: fit-content;
     }
   }
 }
@@ -15,27 +15,25 @@ html {
 /*HEADING-TUNING MENU AND TUNE UP LOGO*/
 #tuningMenu {
   position: relative;
+  height: 50px;
+  width: 350px;
   z-index: 3;
   margin-top: 20px;
   padding-left: 20px;
-  height: 50px;
-  width: 350px;
-  text-align: left;
-  font-size: 30px;
-  font-family: "Google Sans", Roboto, Arial, sans-serif;
   background-color: black;
   color: white;
   border-radius: 100px;
   filter: drop-shadow(20px 20px 20px black);
+  text-align: left;
+  font-size: 30px;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
   cursor: pointer;
   & {
-    @media (width <= 980px) {
-      font-size: 25px;
-      width: 800px;
-      height: 130px;
-      font-size: 72px;
-      margin-left: 100px;
-      margin-top: 100px;
+    @media (width <= 750px) {
+      width: 250px;
+      height: 50px;
+      margin: 20px 0px 0px 10px;
+      font-size: 22px;
     }
   }
 }
@@ -44,48 +42,39 @@ option {
   font-weight: lighter;
   font-size: 26px;
   & {
-    @media (width <= 980px) {
+    @media (width <= 750px) {
       font-weight: lighter;
-      font-size: 5vw;
+      font-size: 22px;
     }
   }
 }
 
 /*BODY- BCK IMG, BUTTONS, LETTERS, LOGO*/
-
-body {
-  & {
-    @media (width <= 980px) {
-
-    }
-  }
-}
-
 .bodyWrapper {
-  margin-top: 10px;
   width: fit-content;
-  height:fit-content;
+  height: fit-content;
+  margin-top: 10px;
   & {
-    @media (width <= 980px) {
+    @media (width <= 750px) {
     }
   }
 }
 
 .guitar {
   position: absolute;
-  z-index: 1;
   width: 1600px;
   height: 1000px;
+  z-index: 1;
   background-image: url("../images/guitar5.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   filter: drop-shadow(10px 10px 10px black);
   & {
-    @media (width <= 980px) {
-      margin-top: 750px;
+    @media (width <= 750px) {
       transform: rotate(-90deg);
-      width: 2200px;
-      height: 2000px;
+      width: 700px;
+      height: 400px;
+      margin: 100px 0px 0px -152px;
     }
   }
 }
@@ -95,116 +84,116 @@ body {
   position: absolute;
   z-index: 2;
   & {
-    @media (width <= 980px) {
+    @media (width <= 750px) {
+      margin-left: 10px;
     }
   }
 }
 
 .noteLetters {
-  margin-top: 80px;
-  margin-left: 850px;
-  color: white;
   position: absolute;
-  text-shadow: 2px 2px 12px rgb(107, 86, 48);
+  margin: 80px 0px 0px 850px;
+  color: white;
   font-size: 100px;
+  text-shadow: 2px 2px 12px rgb(107, 86, 48);
+  & #noteLetter4 {
+    margin-top: 30px;
+  }
+
+  & #noteLetter3 {
+    margin-top: 20px;
+  }
+
+  & #noteLetter2 {
+    margin-top: 20px;
+  }
+  & #noteLetter1 {
+    margin-top: 10px;
+  }
+
   & {
-    @media (width <= 980px) {
+    @media (width <= 750px) {
       font-size: 172px;
+      margin: 40px 0px 0px 110px;
     }
   }
   & #noteLetter6 {
-    @media (width <= 980px) {
+    @media (width <= 750px) {
       position: absolute;
       margin-top: unset;
     }
   }
   & #noteLetter5 {
-    @media (width <= 980px) {
+    @media (width <= 750px) {
       position: absolute;
       margin-top: unset;
     }
   }
   & #noteLetter4 {
-    @media (width <= 980px) {
+    @media (width <= 750px) {
       position: absolute;
       margin-top: unset;
     }
   }
   & #noteLetter3 {
-    @media (width <= 980px) {
+    @media (width <= 750px) {
       position: absolute;
       margin-top: unset;
     }
   }
   & #noteLetter2 {
-    @media (width <= 980px) {
+    @media (width <= 750px) {
       position: absolute;
       margin-top: unset;
     }
   }
 }
 
-#noteLetter4 {
-  margin-top: 30px;
-}
-#noteLetter3 {
-  margin-top: 20px;
-}
-
-#noteLetter2 {
-  margin-top: 20px;
-}
-#noteLetter1 {
-  margin-top: 10px;
-}
-
 /* AUDIO BUTTONS */
 .button-wrapper {
-  position: absolute;
   display: flex;
-  flex-direction: column;
-  margin-top: 220px;
-  margin-left: 1450px;
+  position: absolute;
   width: fit-content;
+  flex-direction: column;
+  margin: 220px 0px 0px 1450px;
   & {
-    @media (width <= 980px) {
+    @media (width <= 750px) {
       display: flex;
-      margin-top: 525px;
       flex-direction: row;
-      margin-left: 80px;
+      margin: 275px 0px 0px 12px;
     }
   }
 }
 
 .button {
+  display: fixed;
   z-index: 2;
-  margin-top: 16px;
-  background-color: #848670;
+  margin-top: 14px;
+  padding: 12px 20px;
+  color: #eeede5;
+  background-image: radial-gradient(circle, rgb(97, 95, 88),#b6b28c);
   border-radius: 100px;
-  border-style: none;
-  color: #ece5ea;
-  cursor: pointer;
+  border-color:rgb(221, 215, 172);
+  border-width: 2px;
+  border-style:ridge;
+  box-shadow: 2px 2px 0px rgb(112, 98, 78);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
-  padding: 12px 20px;
   text-align: center;
-  box-shadow: 4px 2px tan;
-  display: fixed;
+  cursor: pointer;
   & {
-    @media (width <= 980px) {
-      margin-top: 1225px;
-      margin-left: 38px;
-      padding: 50px 70px;
-      font-weight: bold;
-      font-size: 65px;
-      box-shadow: 20px 20px 40px rgb(0, 0, 0);
+    @media (width <= 750px) {
+      margin-left: 12px;
+      padding: 8px 15px;
+      /* box-shadow: 10px 10px 10px rgb(0, 0, 0); */
+      font-size: 18px;
     }
   }
 }
 
 .button:hover {
-  background: #f6f9fe;
   color: #e6d81e;
+  background: #f6f9fe;
 }
 
 .button:active {
@@ -216,26 +205,27 @@ body {
 }
 
 /*CODE KITTEN ICON*/
-.cat {
-  max-height: 175px;
+#cat {
   position: absolute;
-  margin-top: 900px;
   z-index: 3;
+  margin-top: 900px;
+  max-height: 175px;
   filter: drop-shadow(10px 5px 5px black);
   cursor: pointer;
   & {
-    @media (width <= 980px) {
+    @media (width <= 750px) {
       visibility: hidden;
       height: 1px;
     }
   }
 }
 
-/*ON HOVER SIGNS*/
-/* #pets {
-  margin-top: 45vh;
-  left: 5vw;
+/* ON HOVER SIGNS*/
+#pets {
   position: absolute;
+  height:300px;
+  z-index: 2;
+  margin: 600px 0px 0px 80px;
   visibility: hidden;
   & {
     @media (width <= 980px) {
@@ -247,9 +237,9 @@ body {
 
 #sign {
   position: absolute;
-  top: 5vw;
-  left: 10vw;
-  height: 35vh;
+  height:300px;
+  z-index: 2;
+  margin: 10px 0px 0px 80px;
   visibility: hidden;
   & {
     @media (width <= 980px) {
@@ -258,4 +248,4 @@ body {
       top: 1000px;
     }
   }
-} */
+}
