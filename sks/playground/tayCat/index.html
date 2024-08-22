@@ -18,16 +18,22 @@
     <link href="styles/taycat.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>The Playground</title>
+    <title>Study Hall</title>
   </head>
   <body>
-    <div id="discoBallLight"></div>
-    <div id="discoBall">
-      <div id="discoBallMiddle"></div>
+    <div class="bodywrapper">
+      <img onclick="catPet()" src="images/cat1.png" id="cat" />
+      <button class="chatbtn" onclick="window.openCXGenieChatWidget()">
+        Ask script Sensei pox a question?
+      </button>
     </div>
-    <img onclick="catPet()" src="images/cat1.png" id="cat">   
-    <h1>♦♦♦sensei taycat♦♦♦</h1>
     <script src="scripts/taycat.js"></script>
     <script src="scripts/discoBall.js"></script>
+    <script
+      src="https://widget.cxgenie.ai/widget.js"
+      data-aid="a520412b-1d63-42a5-a7f0-b650c61edf17"
+      data-lang="en"
+      data-hide-widget-button="true"
+    ></script>
   </body>
 </html>
