@@ -1,0 +1,23 @@
+html {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bodywrapper {
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.kitty {    
+    width: 50%;
+    height: auto;
+    margin:auto;
+}
+
+.one {
+    color:aqua;
+    font-size: 32px;
+    margin:auto;
+    text-align: center;
+}
