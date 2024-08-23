@@ -7,6 +7,15 @@ body {
   background-image: url(http://www.zingerbugimages.com/backgrounds/multi_colored_stars.gif);
   border-style: dashed;
   border-color: antiquewhite;
+  box-shadow: 50px 50px 50px black;
+  & {
+    @media (width <= 1128px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;    
+    }
+  }
 }
 
 .bodywrapper {
@@ -15,6 +24,13 @@ body {
   padding-bottom: 150px;
   margin: 0 auto;
   width: max-content;
+  & {
+    @media (width <= 1128px) {
+      width:90%;
+      padding-bottom:70px;
+    }
+  }
+
 }
 
 .chatbtn {
@@ -27,6 +43,14 @@ body {
   font-weight: lighter;
   border-style: dashed;
   border-color: antiquewhite;
+  box-shadow: 50px 50px 50px black;
+  & {
+    @media (width <= 1128px) {
+      width:50%;
+      align-self: center;
+      font-size: 18px;
+    }
+  }
 }
 
 #cat {
@@ -35,4 +59,9 @@ body {
   margin-right: auto;
   padding: 50px 5px 50px;
   width: 450px;
+  & {
+    @media (width <= 1128px) {
+      width:90%
+    }
+  }
 }
