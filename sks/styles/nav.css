@@ -28,7 +28,8 @@ h1 {
   text-shadow: 4px 4px 12px rgb(173, 91, 116);
   & {
     @media (width <= 980px) {
-      font-size: 26px;
+      font-size: 32px;
+      margin-bottom: 100px;
     }
   }
 }
@@ -307,19 +308,44 @@ body {
 
 a#todoLink {
   height:200px;
+  & {
+    @media (width <= 980px) {
+      height: 0px;
+      position:absolute;
+    }
+  }
 }
 
 a#playLink {
   height:200px;
+  & {
+    @media (width <= 980px) {
+      height: 0px;
+      width:0px;
+      position:absolute;
+    }
+  }
 }
 
 a#tuneUpLink {
   height:300px;
   width:400px;
+  & {
+    @media (width <= 980px) {
+      height: 0px;
+      position:absolute;
+    }
+  }
 }
 
 a#artLink {
   height: 200px;
+  & {
+    @media (width <= 980px) {
+      height: 0px;
+      position:absolute;
+    }
+  }
 }
 /*NIGHTMODE SWITCH*/
 /* The switch - the box around the slider */
