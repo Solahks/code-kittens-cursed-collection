@@ -38,6 +38,10 @@ body {
   margin: auto;
   width: fit-content;
   height: fit-content;
+  & {
+    @media (width <= 980px) {
+    }
+  }
 }
 
 #bodyWrapper {
@@ -101,9 +105,7 @@ body {
   & {
     @media (width <= 980px) {
       height: 350px;
-      margin-left: 20vw;
-      position: unset;
-      display: unset;
+      margin: 0 auto;
     }
   }
 }
@@ -192,6 +194,7 @@ body {
       position: relative;
       display: block;
       text-align: center;
+      margin-top: 40px;
       margin-left: auto;
       margin-right: auto;
       width: 80%;
@@ -230,11 +233,75 @@ body {
   }
 }
 
+#galbtn {
+  position: absolute;
+  visibility: hidden;
+  background: #7c7c7c;
+  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+  border-top: 6px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: antiquewhite;
+  font-family: "Courier New", Courier, monospace;
+  & {
+    @media (width <= 980px) {
+      visibility: visible;
+      position: relative;
+      display: block;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      height: 50px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+#questBtn {
+  position: absolute;
+  visibility: hidden;
+  background: #7c7c7c;
+  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+  border-top: 6px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: antiquewhite;
+  font-family: "Courier New", Courier, monospace;
+  & {
+    @media (width <= 980px) {
+      visibility: visible;
+      position: relative;
+      display: block;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      height: 50px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
 #tuneBtnLink {
   color: transparent;
 }
 
 #playBtnLink {
+  color: transparent;
+}
+
+#questLink {
+  color: transparent;
+}
+
+#galLink {
   color: transparent;
 }
 
